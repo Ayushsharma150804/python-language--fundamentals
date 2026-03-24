@@ -123,5 +123,67 @@ elif computer_choice==1 and user_input==2:
 elif computer_choice<user_input:
     print("you loose!")
 
+list=(list(input("enter the numbers want to stored in list")))
+
+list.sort()
+print(list[-2])
+
+lis=input("enter the number")
+
+if lis==lis[::-1]:
+    print("palindrome")
+else:
+    print(" not palindrome")
+
+lett=input("enter the word").lower()
+count=0
+
+for ch in lett:
+    if ch in "aeiou":
+        count +=1
+        print(count)
+
+num=int (input("enter the number"))
+flag=True
+
+if num<=1:
+     flag=False
+for i in range(2,int(num*0.5)+1):
+    if num%i==0:
+     flag=False
+     break
+if flag==True:
+     print("prime number")
+else:
+    print("not prime")
+
+num=(input("enter the number"))
+print(num[::-1])
+
+num=list(input())
+num.sort
+print(num[::-1])
+print(num[-1])
+
+num=(input("enter the number"))
+print(len(num))
+
+# Prompt the user for input
+user_input = input("Enter a list of numbers separated by spaces (e.g., 1 2 3 4): ")
+
+# Split the input string by spaces into a list of strings
+input_list_str = user_input.split()
+
+# Convert each string in the list to an integer
+input_list_int = [int(num) for num in input_list_str]
+
+# Calculate the sum of the integer list
+total_sum = sum(input_list_int)
+
+# Print the original input list and the calculated sum
+print(f"Input: {input_list_int}")
+print(f"Output: {total_sum}")
+
+
 
 
